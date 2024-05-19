@@ -1,33 +1,66 @@
+@import url('https://kit.fontawesome.com/8e7a21a447.css');
+/* @import url('https: //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https: //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply text-white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* smooth butter scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hide placeholder for date inputs */
+input[type="date"]::-webkit-datetime-edit,
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+    color: transparent;
+}
+
+/* Placeholder text should be hidden for date input */
+input[type="date"].placeholder:text-transparent::placeholder {
+    color: transparent;
+}
+
+/* Peer and focus styles for floating label */
+.peer:focus~label,
+.peer:valid~label {
+    color: white;
+    font-size: 0.75rem;
+    transform: translateY(-1.5rem);
+}
+
+/* when peer is focused, show the date placeholders */
+.peer:focus::-webkit-datetime-edit,
+.peer:focus::-webkit-datetime-edit-text,
+.peer:focus::-webkit-datetime-edit-month-field,
+.peer:focus::-webkit-datetime-edit-day-field,
+.peer:focus::-webkit-datetime-edit-year-field {
+    color: white;
+}
+
+.peer:valid::-webkit-datetime-edit,
+.peer:valid::-webkit-datetime-edit-text,
+.peer:valid::-webkit-datetime-edit-month-field,
+.peer:valid::-webkit-datetime-edit-day-field,
+.peer:valid::-webkit-datetime-edit-year-field {
+    color: white;
+}
+
+/* when text selected, make selection red */
+/* on select */
+::-moz-selection {
+    @apply bg-red-800;
+}
+
+::selection {
+    @apply bg-red-800;
 }
