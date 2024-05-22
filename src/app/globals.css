@@ -34,8 +34,8 @@ input[type="date"].placeholder:text-transparent::placeholder {
 .peer:focus~label,
 .peer:valid~label {
     color: white;
-    font-size: 0.75rem;
-    transform: translateY(-1.5rem);
+    /* font-size: 0.75rem;
+    transform: translateY(-1.5rem); */
 }
 
 /* when peer is focused, show the date placeholders */
