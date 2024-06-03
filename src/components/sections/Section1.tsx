@@ -181,11 +181,16 @@ export const Section1: React.FC = () => {
                     <span className="text-red-700 font-bold text-sm">How We Work</span>
                     <h2 className="text-3xl font-bold uppercase text-center">We Work Differently</h2>
                     <p className="text-center mt-2 text-sm leading-relaxed">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquid similique facilis natus modi aspernatur nostrum nulla, necessitatibus inventore ullam perferendis, ut nemo non possimus nisi ratione vel, reprehenderit quisquam.
+                        At RSC Buying Group, our approach sets us apart from other car buying companies. We maintain a
+                        robust network of reputable sports and prestige motor dealers who rely on us to find high-quality
+                        used cars that meet their specific needs.
                     </p>
                     <p className="text-center mt-2 text-sm leading-relaxed">
-                        Adipisci recusandae sequi dolorum quidem accusantium doloribus quibusdam repellat magni, laborum in error officiis quia perspiciatis, sapiente qui hic quaerat corporis veniam ipsa. Amet tempore expedita dolore odio eligendi vero?
-                        Adipisci recusandae sequi dolorum quidem accusantium doloribus quibusdam repellat magni, laborum in error officiis quia perspiciatis, sapiente qui hic quaerat corporis veniam ipsa. Amet tempore expedita dolore odio eligendi vero?
+                        Using the details you provide, we present your car to our dealer network and facilitate a competitive
+                        bidding process to ensure we secure the highest possible price for your vehicle. Once we have
+                        achieved the best price, we buy the car directly from you and deliver it to the dealer with the winning
+                        bid. We charge the dealers a separate finder's fee, which means you get the full sale amount of your
+                        car, unlike other companies that might reduce your payment by taking a profit margin from the sale.
                     </p>
                 </div>
 
@@ -199,8 +204,10 @@ export const Section1: React.FC = () => {
                     </div>
                     <div className="w-full">
                         <p className="text-center lg:text-left text-sm leading-relaxed max-w-lg mx-auto">
-                            Adipisci recusandae sequi dolorum quidem accusantium doloribus quibusdam repellat magni, laborum in error officiis quia perspiciatis, sapiente qui hic quaerat corporis veniam ipsa. Amet tempore expedita dolore odio eligendi vero?
-                            Adipisci recusandae sequi dolorum quidem accusantium doloribus quibusdam repellat magni, laborum in error officiis quia perspiciatis, sapiente qui hic quaerat corporis veniam ipsa. Amet tempore expedita dolore odio eligendi vero?
+                            With us, you won't receive a standard, system-generated quote simply by entering your registration
+                            number. We're interested in learning about the specific details of your car, including its features,
+                            service history, and any other information you can provide that will assist us in offering you a better
+                            deal.
                         </p>
                     </div>
                 </div>

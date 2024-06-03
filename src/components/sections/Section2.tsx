@@ -104,7 +104,7 @@ export const Section2: React.FC = () => {
     });
 
     return (
-        <div className="w-full h-full mx-auto px-10 pt-6 pb-12 bg-theme-gray mt-16">
+        <div className="w-full h-full mx-auto px-10 pt-6 pb-12 bg-theme-gray mt-16 hidden">
             <section className="w-full h-full flex flex-col items-center mx-auto mt-8 testimonials">
                 <div className="flex flex-col items-center justify-center gap-2 text-white px-7">
                     {/* tropyh */}

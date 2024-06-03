@@ -39,10 +39,10 @@ export const Footer: React.FC = () => {
             <div className="mx-auto w-full max-w-screen-xl py-8 lg:py-12 font-bold">
                 <div className="flex-col flex lg:flex-row lg:justify-between p-8">
                     <div className="mb-6 lg:mb-0">
-                        <div className="flex lg:flex-col items-center lg:items-start footer-logo">
-                            <img src="/assets/logo.svg" alt="RSC Buying Group logo" className="w-20 h-6" />
+                        <div className="flex lg:flex-col items-center lg:items-start footer-logo font-medium">
+                            <img src="/logo.png" alt="RSC Buying Group logo" className="w-20 h-6" />
                             <span className="text-xs leading-relaxed my-2">
-                                © RSC Buying Group
+                                2024 © RSC Buying Group. 
                                 <br className="hidden md:block" />
                                 All Rights Reserved
                             </span>
@@ -51,10 +51,10 @@ export const Footer: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:grid-cols-4 footer-links">
                         <div>
-                            <h2 className="mb-6 text-lg uppercase">Contact Us</h2>
+                            <h2 className="mb-6 text-sm uppercase">Contact Us</h2>
                             <ul className="font-medium text-sm">
                                 <li className="mb-4">
-                                    <i className="fas fa-phone-alt min-w-6"></i> Phone: 01234 567 890
+                                    <i className="fas fa-phone-alt min-w-6"></i> Phone: 077 629 73943
                                 </li>
                                 <li className="mb-4">
                                     <i className="far fa-envelope min-w-6"></i> Email: email@rsc.co.uk
@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-lg uppercase">Follow Us On</h2>
+                            <h2 className="mb-6 text-sm uppercase">Follow Us On</h2>
                             <ul className="font-medium text-sm">
                                 <li className="mb-4">
                                     <i className="fab fa-facebook-f min-w-6"></i> Facebook
@@ -79,15 +79,12 @@ export const Footer: React.FC = () => {
                             </ul>
                         </div>
                         <div className="w-full col-span-2 mt-4 md:mt-0">
-                            <h2 className="text-2xl tracking-tight text-white uppercase">Subscribe.</h2>
+                            <h2 className="text-lg tracking-tight text-white uppercase">Subscribe.</h2>
                             <p className="mt-4 text-sm leading-8 font-medium">
                                 Get the latest news and updates from RSC Buying Group.
                             </p>
 
-                            <div className="mt-6 flex gap-x-4">
-                                <label htmlFor="email-address" className="sr-only">
-                                    Email address
-                                </label>
+                            <div className="mt-6 flex gap-x-4 font-medium">
                                 <ThemeInput type="email" name="email-address" label="Email address" />
                                 <ThemeButton className="text-sm">Subscribe</ThemeButton>
                             </div>

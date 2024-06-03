@@ -9,6 +9,8 @@
 
 body {
     @apply text-white;
+    letter-spacing: 1.1px;
+    font-size: 90%;
 }
 
 /* smooth butter scrolling */
@@ -64,3 +66,4 @@ input[type="date"].placeholder:text-transparent::placeholder {
 ::selection {
     @apply bg-red-800;
 }
+

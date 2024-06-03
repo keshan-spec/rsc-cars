@@ -63,7 +63,7 @@ export const Header: React.FC = () => {
     return (
         <header className="min-h-[90dvh] relative"
             style={{
-                backgroundImage: "url('/assets/louis-meeckers-rKPRxpTe92o-unsplash.jpg')",
+                backgroundImage: "url('/assets/audi-dashboard.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "top",
                 backgroundRepeat: "no-repeat",
@@ -72,23 +72,28 @@ export const Header: React.FC = () => {
             <nav className="nav-links flex w-full justify-between items-center min-h-20 px-4 bg-black text-white">
                 <div className="flex items-center">
                     <Link href="/">
-                        <img src="/assets/" alt="Logo" className="h-12 w-12 ml-4" />
+                        <img src="/logo.png" alt="Logo" className="h-7 w-full ml-4" />
                     </Link>
                 </div>
-                <nav className="flex items-center gap-6 text-white uppercase font-medium">
+                <nav className="hidden items-center gap-6 text-white uppercase font-bold text-xs md:flex lg:flex">
                     <Link href="#faq">FAQ</Link>
                     <Link href="#value-car">Value your car</Link>
                     <Link href="#contact">Contact us</Link>
                 </nav>
-                <div className="flex items-center gap-4 mr-3">
-                    <i className="far fa-phone text-white"></i>
-                    <i className="far fa-envelope text-white"></i>
+                <div className="flex items-center gap-4 mr-3 cursor-pointer">
+                    <a href="tel:07762973943" className="text-white">
+                        <i className="far fa-phone text-white"></i>
+                    </a>
+                   
+                    <a href="mailto:jason@src.co.uk" className="text-white">
+                        <i className="far fa-envelope text-white"></i>
+                    </a>
                 </div>
             </nav>
 
             <div className="banner-info absolute left-12 top-2/4 flex flex-col items-start justify-start gap-2">
-                <h1 className="text-4xl text-white font-bold uppercase">Sell your car today!</h1>
-                <p className="text-white text-center font-bold">Get the highest price for your car hassle free.</p>
+                <h1 className="text-2xl text-white font-bold uppercase">Sell your car today!</h1>
+                <p className="text-white text-left font-bold text-sm">Get the highest price for your car hassle free.</p>
                 <ThemeButton className="mt-3">
                     Get a valuation
                 </ThemeButton>

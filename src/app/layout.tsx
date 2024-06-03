@@ -1,12 +1,58 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { DM_Sans } from "next/font/google";
+import localFont from 'next/font/local'
 
 import "./globals.css";
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const inter = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
+// const font = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "600"] });
+const font = localFont({
+  src: [
+    {
+      path: "./fonts/DM_Sans/static/DMSans-Light.ttf",
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: "./fonts/DM_Sans/static/DMSans-Regular.ttf",
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: "./fonts/DM_Sans/static/DMSans-Medium.ttf",
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: "./fonts/DM_Sans/static/DMSans-SemiBold.ttf",
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: "./fonts/DM_Sans/static/DMSans-Bold.ttf",
+      weight: '700',
+      style: 'normal',
+    },
+    // {
+    //   path: "./fonts/Roc_Grotesk/Kostic\ -\ Roc\ Grotesk\ ExtraWide\ Light.otf",
+    //   weight: '200',
+    //   style: 'normal',
+    // },
+    // {
+    //   path: "./fonts/Roc_Grotesk/Kostic\ -\ Roc\ Grotesk\ ExtraWide.otf",
+    //   weight: '400',
+    //   style: 'normal',
+    // },
+    {
+      path: "./fonts/Roc_Grotesk/Kostic\ -\ Roc\ Grotesk\ ExtraWide\ Medium.otf",
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "RSC",
@@ -20,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-black max-w-screen-xl mx-auto ${inter.className}`}>
+      <body className={`bg-black max-w-screen-xl mx-auto ${font.className}`}>
         {/* <Loader /> */}
         <div id="smooth-wrapper">
           <div id="smooth-content">
